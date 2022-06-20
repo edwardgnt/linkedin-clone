@@ -3,8 +3,16 @@ import React from 'react'
 import './Sidebar.css'
 
 const Sidebar = () => {
+    
+    const recentItem = (topic) => (
+        <div className="sidebar__recentItem">
+            <span className="sidebar__hash">#</span>
+            <p>{topic}</p>
+        </div>
+    )
+
   return (
-    <div className='sidebar'>
+    <div className="sidebar">
         <div className="sidebar__top">
             <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1964&q=80" alt="" />
             <Avatar className='sidebar__avatar' />
@@ -25,6 +33,11 @@ const Sidebar = () => {
 
         <div className="sidebar__bottom">
             <p>Recent</p>
+            {recentItem('reactjs')}
+            {recentItem('programming')}
+            {recentItem('softwareengineering')}
+            {recentItem('design')}
+            {recentItem('developer')}
         </div>
     </div>
   )
