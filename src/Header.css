@@ -2,6 +2,7 @@
     position: sticky;
     top: 0;
     display: flex;
+    background-color: white;
     justify-content: space-evenly;
     border-bottom: 0.1px solid lightgray;
     padding-top: 10px;
@@ -28,6 +29,7 @@
     height: 22px;
     color: gray;
     background-color: #eef3f8;
+    margin-top: 10px;
 }
 
 .header__search > input {
